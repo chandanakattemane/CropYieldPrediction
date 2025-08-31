@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Crop Recommendation{% endblock title %}
+
+{% block content %}
+<div class="row-sm p-sm-5">
+    <div class="col-sm-12 p-sm-5">
+        <p class="text-center">
+            <h3 class="text-center">
+                Crop Recommendation System
+            </h3>
+            <p class="text-center">
+                The crop you should plant based on your data is - 
+                <h5 class="text-center" style="font-size: 80px; font-weight: bold;">
+                    <b>{{corrected_result}}</b>
+                </h5>
+            </p><br>
+        <p class="text-center">
+            <h5 class="text-center"><b>Click To Watch</b></h5>
+        </p>
+        <a class="text-center" href="{{ weburl }}" target="_blank">
+            <img class="text-center" src="https://as2.ftcdn.net/v2/jpg/04/88/83/57/1000_F_488835750_YwfSqhmHwKyFqf9jEes6uGw6AJHRG5xd.jpg" width="450" height="300">
+        </a></p>
+    </div>
+</div>
+{% endblock content %}

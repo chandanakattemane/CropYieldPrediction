@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block title %}Welcome{% endblock title %} 
+
+{% block content %}
+
+<div class="row-sm p-sm-5">
+    <div class="col-sm-12 p-sm-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{url_for('static', filename='images/sliders/first.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Welcome to Crop Assistant</h2>
+                        <p>A agriculture utility website to help farmers by providing harvesting solution using artificial intelligence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<!-- Quick Access Buttons -->
+<div class="row text-center mb-5">
+    <div class="col-md-4 mb-3">
+        <a href="/about" class="btn btn-success btn-lg btn-block" style="padding: 15px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <i class="fas fa-info-circle mr-2"></i> About Project
+        </a>
+    </div>
+    <div class="col-md-4 mb-3">
+        <a href="/" class="btn btn-primary btn-lg btn-block" style="padding: 15px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <i class="fas fa-home mr-2"></i> Home
+        </a>
+    </div>
+    <div class="col-md-4 mb-3">
+        <a href="/croprecommendation" class="btn btn-success btn-lg btn-block" style="padding: 15px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <i class="fas fa-seedling mr-2"></i> Crop Recommendation
+        </a>
+    </div>
+</div>
+
+
+{% endblock content %}
